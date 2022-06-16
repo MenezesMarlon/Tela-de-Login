@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 0px 20px;
 }
 
 h1 {
@@ -23,7 +24,7 @@ h1 {
 }
 
 .container {
-    width: 350px;
+    width: 450px;
     background: #00000070;
     border-radius: 20% 1% 20% 1%;
     box-shadow: 3px 3px 10px #000, 3px 6px 20px #000;
@@ -55,7 +56,7 @@ label {
 }
 
 input:focus {
-    border-bottom: 2px solid #63c496;   
+    border-bottom: 2px solid #63c496;
     transition: all 0.2s ease-out;
     box-shadow: 0 1px 0 #63c496;
 }
@@ -66,17 +67,16 @@ hr {
 
 button {
     padding: 10px 70px;
-    border: 2px solid #FFF;
+    border: 2px solid #FFFFFF90;
     border-radius: 20px;
-    background: #FFF;
+    background: rgb(219, 210, 210);
     cursor: pointer;
     margin: 5px;
-    box-shadow: 1px 1px 10px #FFF;
     color: #000;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 1px;
-    
+
 }
 
 button:hover {
@@ -88,17 +88,19 @@ button:hover {
     font-weight: bold;
     letter-spacing: 2px;
 }
+
 .justify-center {
     display: flex;
     justify-content: center;
 }
+
 .container:hover {
     background: #00000099;
     transition: 0.3s ease-in-out;
 }
 
 .links {
-   color: #FFF;
+    color: #FFF;
 }
 
 .links a {
@@ -106,18 +108,18 @@ button:hover {
     text-decoration: none;
 }
 
-input:focus + label {
+input:focus+label {
     transform: translateY(-14px);
     transition: all 0.3s ease-in-out;
     font-size: 13px;
     color: #63c496;
 }
 
-input:not(:placeholder-shown) + label {
+input:not(:placeholder-shown)+label {
     transform: translateY(-14px);
     transition: all 0.3s ease-in-out;
     font-size: 13px;
-    color: #63c496;   
+    color: #63c496;
 }
 
 input:not(:placeholder-shown) {
